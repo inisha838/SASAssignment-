@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 70, 1470, 894]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">116</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">9</P>
+  <Block BlockType="Gain" Name="Gain" SID="2">
+    <P Name="Position">[150, 160, 180, 190]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Gain">540</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="9">
+    <P Name="Position">[380, 225, 410, 255]</P>
+    <P Name="ZOrder">9</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">0.1</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="5">
+    <PortCounts in="1"/>
+    <P Name="Position">[505, 159, 535, 191]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-0.24141&apos;,&apos;MaxYLimReal&apos;,&apos;2.17269&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2.17269&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Transfer Fcn1&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-0.24141&apos;,&apos;MaxYLimReal&apos;,&apos;2.17269&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2.17269&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023b&apos;)),&apos;Version&apos;,&apos;2023b&apos;,&apos;Position&apos;,[663.4 239.4 870.4 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Step" Name="Step" SID="1">
+    <P Name="Position">[40, 160, 70, 190]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum1" SID="6">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[105, 165, 125, 185]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum2" SID="7">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[210, 165, 230, 185]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="TransferFcn" Name="Transfer Fcn" SID="3">
+    <P Name="Position">[265, 157, 325, 193]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Numerator">[10]</P>
+    <P Name="Denominator">[1 1]</P>
+  </Block>
+  <Block BlockType="TransferFcn" Name="Transfer Fcn1" SID="8">
+    <P Name="Position">[415, 157, 475, 193]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Numerator">[2]</P>
+    <P Name="Denominator">[4 1]</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">6#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Dst">7#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Dst">3#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">8#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Dst">2#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Points">[-155, 0]</P>
+    <P Name="Dst">7#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Points">[4, 0]</P>
+    <Branch>
+      <P Name="ZOrder">20</P>
+      <P Name="Points">[0, 65]</P>
+      <P Name="Dst">9#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">19</P>
+      <P Name="Points">[6, 0]</P>
+      <Branch>
+        <P Name="ZOrder">27</P>
+        <P Name="Points">[6, 0; 0, 126; -381, 0]</P>
+        <P Name="Dst">6#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">26</P>
+        <P Name="Dst">5#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+</System>
